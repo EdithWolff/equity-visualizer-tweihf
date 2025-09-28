@@ -1,14 +1,26 @@
+
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 export const colors = {
-  primary: '#162456',    // Material Blue
-  secondary: '#193cb8',  // Darker Blue
-  accent: '#64B5F6',     // Light Blue
-  background: '#101824',  // Keeping dark background
-  backgroundAlt: '#162133',  // Keeping dark background
-  text: '#e3e3e3',       // Keeping light text
-  grey: '#90CAF9',       // Light Blue Grey
-  card: '#193cb8',       // Keeping dark card background
+  primary: '#4F46E5',      // Indigo
+  secondary: '#6366F1',    // Light Indigo
+  accent: '#8B5CF6',       // Purple
+  background: '#FFFFFF',   // White background
+  backgroundAlt: '#F8FAFC', // Light gray background
+  text: '#1F2937',         // Dark gray text
+  textSecondary: '#6B7280', // Medium gray text
+  grey: '#E5E7EB',         // Light gray
+  card: '#FFFFFF',         // White card background
+  border: '#E5E7EB',       // Light border
+  success: '#10B981',      // Green
+  warning: '#F59E0B',      // Amber
+  error: '#EF4444',        // Red
+  chart1: '#4F46E5',       // Indigo
+  chart2: '#8B5CF6',       // Purple
+  chart3: '#06B6D4',       // Cyan
+  chart4: '#10B981',       // Emerald
+  chart5: '#F59E0B',       // Amber
+  chart6: '#EF4444',       // Red
 };
 
 export const buttonStyles = StyleSheet.create({
@@ -46,19 +58,38 @@ export const commonStyles = StyleSheet.create({
     width: '100%',
   },
   title: {
-    fontSize: 24,
-    fontWeight: '800',
+    fontSize: 28,
+    fontWeight: '700',
     textAlign: 'center',
     color: colors.text,
-    marginBottom: 10
+    marginBottom: 8,
+    fontFamily: 'Inter_700Bold',
+  },
+  subtitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    textAlign: 'center',
+    color: colors.text,
+    marginBottom: 16,
+    fontFamily: 'Inter_600SemiBold',
   },
   text: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: '400',
     color: colors.text,
     marginBottom: 8,
     lineHeight: 24,
     textAlign: 'center',
+    fontFamily: 'Inter_400Regular',
+  },
+  textSecondary: {
+    fontSize: 14,
+    fontWeight: '400',
+    color: colors.textSecondary,
+    marginBottom: 8,
+    lineHeight: 20,
+    textAlign: 'center',
+    fontFamily: 'Inter_400Regular',
   },
   section: {
     width: '100%',
@@ -71,19 +102,19 @@ export const commonStyles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   card: {
-    backgroundColor: colors.backgroundAlt,
-    borderColor: colors.grey,
+    backgroundColor: colors.card,
+    borderColor: colors.border,
     borderWidth: 1,
-    borderRadius: 10,
-    padding: 10,
+    borderRadius: 12,
+    padding: 20,
     marginVertical: 8,
     width: '100%',
-    boxShadow: '0px 2px 3px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
     elevation: 2,
   },
   icon: {
     width: 60,
     height: 60,
-    tintColor: "white",
+    tintColor: colors.primary,
   },
 });
